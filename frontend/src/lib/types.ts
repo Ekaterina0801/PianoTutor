@@ -1,0 +1,11 @@
+export type NoteEvent = { onset_s: number; offset_s: number; midi_note: number; velocity: number; };
+export type Exercise = { id: string; title: string; composer?: string | null; difficulty: number; tempo_bpm?: number | null; midi_url: string; tags: string[]; };
+export type UserRole = "student" | "teacher" | "researcher" | "admin";
+export type User = { id: string; email: string; name: string; role: UserRole; is_active: boolean; };
+export type AssistantMode = "off" | "heuristic" | "tcn" | "bilstm" | "transformer" | "experimental" | "on";
+export type AlignerMode = "offset" | "linear_dtw" | "safe_linear_dtw" | "basic" | "dtw";
+export type CreateSessionRequest = { user_id?: string; exercise_id: string; source: "midi" | "mic"; performed: NoteEvent[]; expected: NoteEvent[]; onset_tol_s: number; assistant?: AssistantMode; aligner?: AlignerMode; };
+export type CreateSessionResponse = { session_id: string; summary: any; };
+export type ScorePerformanceResponse = { summary: any; events: { expected?: NoteEvent[]; performed?: NoteEvent[]; raw_performed?: NoteEvent[]; matches?: any[] }; pipeline?: any; };
+export type AuthResponse = { access_token: string; token_type: "bearer"; user: User; };
+export type ResearchRunRequest = { name?: string; samples?: number; seed?: number; seed_count?: number; assistant_modes?: AssistantMode[]; aligner_modes?: AlignerMode[]; jitter_s?: number; miss_prob?: number; extra_prob?: number; };

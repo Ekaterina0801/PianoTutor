@@ -1,0 +1,78 @@
+[
+  {
+    "id": "scale_c_major",
+    "title": "C Major Scale (1 octave)",
+    "composer": "Exercise",
+    "difficulty": 1,
+    "tempo_bpm": 90,
+    "midi_url": "/static/scale_c_major.mid",
+    "tags": [
+      "scale",
+      "beginner"
+    ]
+  },
+  {
+    "id": "chords_c_major",
+    "title": "C Major Chords & Arpeggio",
+    "composer": "Exercise",
+    "difficulty": 2,
+    "tempo_bpm": 80,
+    "midi_url": "/static/chords_c_major.mid",
+    "tags": [
+      "chords",
+      "arpeggio"
+    ]
+  },
+  {
+    "id": "scale_c_major_timing",
+    "title": "C Major Scale — Timing Control",
+    "composer": "Adaptive Tutor",
+    "difficulty": 2,
+    "tempo_bpm": 72,
+    "midi_url": "/static/scale_c_major.mid",
+    "tags": [
+      "scale",
+      "timing",
+      "adaptive"
+    ]
+  },
+  {
+    "id": "scale_c_major_research",
+    "title": "C Major Scale — Research Baseline",
+    "composer": "Research Lab",
+    "difficulty": 3,
+    "tempo_bpm": 96,
+    "midi_url": "/static/scale_c_major.mid",
+    "tags": [
+      "benchmark",
+      "baseline",
+      "amt"
+    ]
+  },
+  {
+    "id": "chords_c_major_voicing",
+    "title": "C Major Chords — Voicing Stability",
+    "composer": "Adaptive Tutor",
+    "difficulty": 3,
+    "tempo_bpm": 84,
+    "midi_url": "/static/chords_c_major.mid",
+    "tags": [
+      "chords",
+      "voicing",
+      "left-right"
+    ]
+  },
+  {
+    "id": "chords_c_major_polyphony",
+    "title": "C Major Chords — Polyphonic AMT Test",
+    "composer": "Research Lab",
+    "difficulty": 4,
+    "tempo_bpm": 88,
+    "midi_url": "/static/chords_c_major.mid",
+    "tags": [
+      "polyphony",
+      "benchmark",
+      "chords"
+    ]
+  }
+]

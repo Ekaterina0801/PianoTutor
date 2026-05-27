@@ -1,0 +1,19 @@
+services:
+  backend:
+    build: ./backend
+    ports: ["8000:8000"]
+    environment:
+      - DATABASE_URL=sqlite:///./data/app.db
+      - JWT_SECRET=change-me-in-production
+      - CORS_ORIGINS=http://localhost:3000
+      - ALLOW_MODEL_DOWNLOAD=false
+      - MODEL_CACHE_DIR=/app/data/model_cache
+      - CORRECTOR_CKPT=data/corrector_ckpt.pt
+    volumes:
+      - ./backend/data:/app/data
+  frontend:
+    build: ./frontend
+    ports: ["3000:3000"]
+    environment:
+      - NEXT_PUBLIC_API_BASE=http://localhost:8000
+    depends_on: [backend]

@@ -1,0 +1,1 @@
+Put MIDI files here (scale_c_major.mid, chords_c_major.mid).

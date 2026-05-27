@@ -1,0 +1,7 @@
+.venv
+node_modules
+.next
+.next.broken-20260426-172213
+.DS_Store
+**/maestro_research/cache
+backend/data/model_cache/*.pth
